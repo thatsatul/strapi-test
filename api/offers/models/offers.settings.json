@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "name": "Offers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "product_key": {
+      "model": "products",
+      "via": "Id"
+    },
+    "list": {
+      "type": "json"
+    },
+    "page_id": {
+      "model": "pages",
+      "via": "offers"
+    }
+  }
+}

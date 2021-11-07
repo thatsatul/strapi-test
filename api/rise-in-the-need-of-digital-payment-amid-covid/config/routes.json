@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rise-in-the-need-of-digital-payment-amid-covid",
+      "handler": "rise-in-the-need-of-digital-payment-amid-covid.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rise-in-the-need-of-digital-payment-amid-covid",
+      "handler": "rise-in-the-need-of-digital-payment-amid-covid.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rise-in-the-need-of-digital-payment-amid-covid",
+      "handler": "rise-in-the-need-of-digital-payment-amid-covid.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

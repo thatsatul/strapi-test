@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "rise_in_the_need_of_digital_payment_amid_covids",
+  "info": {
+    "name": "Rise in the need of digital payment amid covid"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "main_content": {
+      "type": "richtext"
+    }
+  }
+}
