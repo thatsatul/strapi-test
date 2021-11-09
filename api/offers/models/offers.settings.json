@@ -24,16 +24,22 @@
       "type": "uid",
       "targetField": "name"
     },
-    "product_key": {
-      "model": "products",
-      "via": "Id"
+    "logo_url": {
+      "type": "string"
     },
-    "list": {
-      "type": "json"
+    "card_id": {
+      "via": "offers",
+      "model": "cards"
     },
-    "page_id": {
-      "model": "pages",
-      "via": "offers"
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

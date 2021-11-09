@@ -17,8 +17,8 @@
   },
   "attributes": {
     "page_id": {
-      "collection": "pages",
       "via": "cards",
+      "collection": "pages",
       "dominant": true
     },
     "card_structure": {
@@ -66,6 +66,58 @@
       },
       "type": "string",
       "required": false
+    },
+    "card_type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "grid_list",
+        "bullet_list",
+        "common_icon_list",
+        "title_n_pic"
+      ],
+      "required": true,
+      "default": "bullet_list"
+    },
+    "sub_title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "title_over_heading": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "offers": {
+      "via": "card_id",
+      "collection": "offers"
+    },
+    "cta_text": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "cta_url": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

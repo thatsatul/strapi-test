@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "pages",
   "info": {
-    "name": "pages"
+    "name": "pages",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -59,10 +60,6 @@
         }
       },
       "type": "text"
-    },
-    "offers": {
-      "via": "page_id",
-      "collection": "offers"
     },
     "cards": {
       "via": "page_id",
