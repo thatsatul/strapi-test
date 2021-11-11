@@ -63,6 +63,14 @@
     "cards": {
       "via": "page",
       "collection": "cards"
+    },
+    "meta_keywords": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "text"
     }
   }
 }

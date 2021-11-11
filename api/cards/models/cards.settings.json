@@ -19,7 +19,6 @@
     "page": {
       "via": "cards",
       "collection": "pages",
-      "model": "pages",
       "dominant": true
     },
     "additional_info": {
