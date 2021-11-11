@@ -5,4 +5,12 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+  find: async ctx => {
+    if (ctx.query.slug) {
+      return strapi.query('pages').find(ctx.query, ['cards.list_items']);
+    } else {
+      return strapi.query('pages').find(ctx.query, ['id']);
+    }
+  }
+};
