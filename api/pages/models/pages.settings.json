@@ -32,8 +32,7 @@
           "localized": true
         }
       },
-      "type": "uid",
-      "targetField": "name"
+      "type": "uid"
     },
     "meta_title": {
       "pluginOptions": {
@@ -62,7 +61,7 @@
       "type": "text"
     },
     "cards": {
-      "via": "page_id",
+      "via": "page",
       "collection": "cards"
     }
   }

@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "offers",
+  "collectionName": "list_items",
   "info": {
-    "name": "Offers",
-    "description": ""
+    "name": "list_items"
   },
   "options": {
     "increments": true,
@@ -12,28 +11,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
     },
     "description": {
       "type": "text"
     },
-    "slug": {
-      "type": "uid"
-    },
-    "logo_url": {
+    "primary_img_url": {
       "type": "string"
     },
     "is_active": {
       "type": "boolean",
       "default": true,
-      "required": true
-    },
-    "is_featured": {
-      "type": "boolean",
-      "default": false,
       "required": true
     }
   }

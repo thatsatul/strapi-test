@@ -16,12 +16,13 @@
     }
   },
   "attributes": {
-    "page_id": {
+    "page": {
       "via": "cards",
       "collection": "pages",
+      "model": "pages",
       "dominant": true
     },
-    "card_structure": {
+    "additional_info": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -49,14 +50,13 @@
       "required": true,
       "unique": true
     },
-    "card_key": {
+    "slug": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "uid",
-      "targetField": "name"
+      "type": "uid"
     },
     "title": {
       "pluginOptions": {
@@ -99,11 +99,7 @@
       },
       "type": "string"
     },
-    "offers": {
-      "via": "card_id",
-      "collection": "offers"
-    },
-    "cta_text": {
+    "primary_cta_text": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -111,13 +107,33 @@
       },
       "type": "string"
     },
-    "cta_url": {
+    "primary_cta_url": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
       "type": "string"
+    },
+    "sequence": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "list_items": {
+      "collection": "list-items"
     }
   }
 }
