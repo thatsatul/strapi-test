@@ -77,7 +77,9 @@
         "grid_list",
         "bullet_list",
         "common_icon_list",
-        "title_n_pic"
+        "title_n_pic",
+        "pic_n_title",
+        "right_image_list"
       ],
       "required": true,
       "default": "bullet_list"
@@ -133,6 +135,30 @@
     },
     "list_items": {
       "collection": "list-items"
+    },
+    "secondary_cta_text": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "secondary_cta_url": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "card_image_url": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
