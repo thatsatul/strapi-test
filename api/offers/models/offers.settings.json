@@ -35,6 +35,23 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "product_type": {
+      "type": "enumeration",
+      "enum": [
+        "postpaid_plus",
+        "wallet",
+        "credit_card"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "offer_cta_text": {
+      "type": "string"
+    },
+    "offer_cta_url": {
+      "type": "string"
     }
   }
 }

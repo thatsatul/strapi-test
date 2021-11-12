@@ -159,6 +159,14 @@
         }
       },
       "type": "string"
+    },
+    "primary_cta_icon": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
